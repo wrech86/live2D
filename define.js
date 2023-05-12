@@ -38,9 +38,8 @@ function mouseEvent(e) {
         if(isDragging == true) {
             var movex = e.pageX - mouseOffsetx;
             var movey = e.pageY - mouseOffsety;
-            if(movex > window.innerWidth - document.getElementById(LAppDefine.CANVAS_ID).width)
+            if(movex > window.innerWidth)
                 movex = window.innerWidth - document.getElementById(LAppDefine.CANVAS_ID).width;
-            if(movex < 0) movex = 0;
             if(movey > window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height)
                 movey = window.innerHeight - document.getElementById(LAppDefine.CANVAS_ID).height;
             if(movey < 0) movey = 0;
